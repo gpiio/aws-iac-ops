@@ -18,3 +18,9 @@ output "internet_gateway_id" {
   value       = aws_internet_gateway.homelab_igw.id
 }
 
+output "public_security_group" {
+  description = "Security group ID for public instances"
+  value       = aws_security_group.public_security_group.id
+}
+
+
